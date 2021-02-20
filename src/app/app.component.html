@@ -1,0 +1,36 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+{{test}}
+
+<p [class]="addClass">adding class binding method1</p>
+<p class="{{addClass}}">adding class binding method2</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td [attr.colspan]="3">Heading</td>
+		</tr>
+		<tr>
+			<td>Row1</td>
+			<td>Row2</td>
+			<td>Row2</td>
+		</tr>
+	</tbody>
+</table>
+
+<input value="Dhinesh" (change) ="print($event)" />
+<input value="Dhinesh" on-change ="print($event)" />
+
+<p bind-class="addClass">adding class binding method3</p>
+
+<p>next two way binding</p>
+
+<input id = "Dhinesh" [(ngModel)] = "name"/>
+{{name}}
+<input id = "Dhinesh" bindon-ngModel = "name"/>
+
+<p [style.background]='"red"' [innerHtml]="test1"></p>
+<p>{{test1}}</p>
