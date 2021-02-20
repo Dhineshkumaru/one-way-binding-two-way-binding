@@ -9,7 +9,8 @@ export class AppComponent {
   name = "Angular " + VERSION.major;
   test = "one way binding";
   addClass = "attrclass";
-  test1 = "another way interpolation<script></script>";
+  test1 =
+    "another way interpolation<script>This script will not show in binding</script>";
 
   print(event) {
     console.log(event);
