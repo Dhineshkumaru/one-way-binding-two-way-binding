@@ -23,4 +23,4 @@ export class AppComponent {
     this.name = event.target.value;
   }
 }
-let joke = new AppComponent();
+// let joke = new AppComponent();
