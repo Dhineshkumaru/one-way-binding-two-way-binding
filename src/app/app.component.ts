@@ -9,8 +9,10 @@ export class AppComponent {
   name = "Angular " + VERSION.major;
   test = "one way binding";
   test2:string;
+  test3:string;
   constructor(){
-    this.test2 = "one way binding test2 works"
+    this.test2 = "one way binding test2 works";
+    // this.test3 = "one way binding test3 works"
   }
   addClass = "attrclass";
   test1 =
@@ -21,3 +23,4 @@ export class AppComponent {
     this.name = event.target.value;
   }
 }
+let joke = new AppComponent();
