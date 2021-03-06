@@ -8,6 +8,10 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   name = "Angular " + VERSION.major;
   test = "one way binding";
+  test2:string;
+  constructor(){
+    this.test2 = "one way binding test2 works"
+  }
   addClass = "attrclass";
   test1 =
     "another way interpolation<script>This script will not show in binding</script>";

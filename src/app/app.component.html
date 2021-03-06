@@ -1,24 +1,26 @@
 <hello name="{{ name }}"></hello>
 <p>
-	Start editing to see some magic happen :)
+  Start editing to see some magic happen :)
 </p>
 
 {{test}}
+
+<h1>{{test2}}</h1>
 
 <p [class]="addClass">adding class binding method1</p>
 <p class="{{addClass}}">adding class binding method2</p>
 
 <table>
-	<tbody>
-		<tr>
-			<td [attr.colspan]="3">Heading</td>
-		</tr>
-		<tr>
-			<td>Row1</td>
-			<td>Row2</td>
-			<td>Row2</td>
-		</tr>
-	</tbody>
+  <tbody>
+    <tr>
+      <td [attr.colspan]="3">Heading</td>
+    </tr>
+    <tr>
+      <td>Row1</td>
+      <td>Row2</td>
+      <td>Row2</td>
+    </tr>
+  </tbody>
 </table>
 
 <input value="Dhinesh" (change) ="print($event)" />
